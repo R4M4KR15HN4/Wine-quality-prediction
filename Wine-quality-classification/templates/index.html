@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {background-color: powderblue;}
+        body {align-items: center;
+        text-align: center;}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quality prediction</title>
+</head>
+<body>
+    <div class="ml-container">
+        <h1>wine quality prediction</h1>
+        <form style="margin: auto; width: 220px;" action="{{ url_for('predict') }}" method="POST">
+            <input class="form-input" type="text" name="volatile_acidity" placeholder="volatile_acidity e.g.0.5"><br><br>
+            <input class="form-input" type="text" name="citric_acid" placeholder="Citric acid eg.0.05"><br><br>
+            <input class="form-input" type="text" name="density" placeholder="density eg. 0.99"><br><br>
+            <input class="form-input" type="text" name="sulphates" placeholder="sulphates eg. 0.5"><br><br>
+            <input class="form-input" type="text" name="alcohol" placeholder="alcohol eg. 6"><br><br>
+
+            <input type="submit" class="my-cta-button" value="Predict">
+        </form>
+    </div>
+   
+</body>
+</html>
